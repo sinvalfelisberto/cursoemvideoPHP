@@ -12,11 +12,12 @@
         $nome = $_GET["nome"];
         $nascimento = $_GET["nascimento"];
         $sexo = $_GET['sexo'];
+        $idade = date("Y") - $nascimento;
 
-        echo "Nome: $nome <br>Ano do Nascimento: $nascimento<br>Sexo: $sexo";
+        echo "$nome é do sexo $sexo e possui $idade anos.";
     ?>  
         <br>
-        <a class="btn-voltar" href="01_exercicio.html">Voltar</a>
+        <a class="btn-voltar" href="02_exercicio.html">Voltar</a>
     </div>
 </body>
 </html>
