@@ -17,7 +17,7 @@
         
         echo "A variável a = $a é igual a b = $b ? $resultadoIgualdade <br>"; 
         echo "A variável a = $a é idêntica a b = $b ? $resultadoIdentico <br>"; 
-        echo "mostrando o tipo da variável $b: $mostratipo"
+        echo "mostrando o tipo da variável $b: $mostratipo";
     ?>
     </div>
 </body>
