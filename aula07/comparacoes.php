@@ -9,6 +9,14 @@
 <body>
     <div>
     <?php
+        $n1 = $_GET["n1"];
+        $n2 = $_GET["n2"];
+        $tipo = $_GET["op"];
+        $resultado = ($tipo == 's') ? $n1 + $n2 : $n1 * $n2;
+
+        echo "Os valores passados foram $n1 e $n2. <br>";
+        echo "O tipo de operação é " . (($tipo == 's') ? "Soma" : "Multiplicação") . "<br>";
+        echo "O resultado da operação é $resultado.<br>";
 
     ?>
     </div>
