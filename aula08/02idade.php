@@ -9,10 +9,11 @@
 <body>
     <div>
     <?php
-        $valor = $_GET["valor"];
-        $srqtValor =sqrt($valor);
+        $nome = $_GET["nome"];
+        $nascimento = $_GET["nascimento"];
+        $sexo = $_GET['sexo'];
 
-        echo "A raiz quadrada de $valor é igual a " . number_format($srqtValor, 2);
+        echo "Nome: $nome <br>Ano do Nascimento: $nascimento<br>Sexo: $sexo";
     ?>  
         <br>
         <a class="btn-voltar" href="01_exercicio.html">Voltar</a>
