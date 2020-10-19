@@ -9,9 +9,9 @@
 <body>
     <div>
     <?php
-        $nome = $_GET["nome"];
-        $nascimento = $_GET["nascimento"];
-        $sexo = $_GET['sexo'];
+        $nome = (isset($_GET["nome"]) ? $_GET["nome"] : "Não preenchido");
+        $nascimento = (isset($_GET["nascimento"]) ? $_GET["nascimento"] : "Não preenchido");
+        $sexo = (isset($_GET['sexo']) ? $_GET['sexo'] : "Não preenchido");
         $idade = date("Y") - $nascimento;
 
         echo "$nome é do sexo $sexo e possui $idade anos.";
