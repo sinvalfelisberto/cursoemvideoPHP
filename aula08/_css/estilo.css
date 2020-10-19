@@ -25,6 +25,37 @@ div {
     border-radius: 4px;
     box-shadow: 3px 3px 0.3px rgba(0,0,0,.3);
     word-wrap: break-word;
+    line-height: 2rem;
+}
+
+.btn-voltar {
+    width: 20px;
+    background-color: rgb(253, 139, 0);
+    text-decoration: none;
+    padding: 7px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    color: #FFF;
+    opacity: 0.9;
+    text-shadow: 1px 1px 3px #000;
+}
+.btn-voltar:hover{
+    opacity: 1;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.btn {
+    background-color: rgb(253, 139, 0);
+    font-size: 1rem;
+    border-radius: 3px;
+    color: #FFF;
+    opacity: 0.9;
+    text-shadow: 1px 1px 3px #000;
+
+}
+.btn:hover{
+    opacity: 1;
+    box-shadow: 1px 1px 3px #000;
 }
 
 /* Long live House Stark */
