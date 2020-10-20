@@ -19,10 +19,8 @@
     <link rel="stylesheet" href="_css/estilo.css">
     <style>
         span.texto {
-            /*font-style: <?php #echo ($tipotexto == "italico") ? "italic" : "none";  ?>;*/
-            /*font-weight: <?php #echo ($tipotexto == "negrito") ? "bold" : "none";  ?>;*/
-            font-weight: bold;
-            font-style: italic;
+            font-style: <?php echo ($tipotexto == "italic") ? "italic" : "none";  ?>;
+            font-weight: <?php echo ($tipotexto == "bold") ? "bold" : "none";  ?>;
             font-size: <?php echo "$tamanho"; ?>;
             color: <?php echo "$cor"; ?>;
         }
