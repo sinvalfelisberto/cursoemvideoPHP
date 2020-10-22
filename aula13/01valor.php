@@ -9,28 +9,27 @@
 <body>
     <div>
         <?php
-            $anoNascimento = $_GET["anoNascimento"];
-            $idade = date("Y") - $anoNascimento;
-            $podeDirigir = '';
-            $podeVotar = '';
-            
-            if($idade < 16) {
-                $podeVotar = "Não pode votar, ";
-                $podeDirigir = "e não pode dirigir.";
-            } elseif($idade < 18) {
-                $podeVotar = "Pode votar,";
-                $podeDirigir = "mas não pode dirigir!";
-            } else {
-                $podeVotar = "Pode votar e";
-                $podeDirigir = " pode dirigir!";
+            for($i = 1; $i <= 10; $i++) {
+                echo "$i ";
             }
+            echo "<br>";
 
+            for ($i = 10; $i >= 1 ; $i--) { 
+                echo "$i ";
+            }
+            echo "<br>";
 
-            echo "Você tem $idade anos. $podeVotar $podeDirigir";
+            for($i = 0; $i <= 50; $i += 5) {
+                echo "$i ";
+            }
+            echo "<br>";
 
+            for ($i= 20; $i >= 0; $i -= 2) { 
+                echo "$i ";
+            }
         ?>  
         <br>
-        <a class="btn-voltar" href="01_exercicio.html">Voltar</a>
+        <a class="btn-voltar" href="#">Voltar</a>
     </div>
 </body>
 </html>

@@ -9,26 +9,13 @@
 <body>
     <div>
         <?php
-            $anoNascimento = $_GET["anoNascimento"];
-            $idade = date("Y") - $anoNascimento;
             
-            $tipoVoto = '';
-            
-            if ($idade < 16) {
-                $tipoVoto = "Proibido votar";
-            } 
-            else {
-                if ($idade < 18 || $idade >= 65) {
-                    $tipoVoto = "Voto facultativo";
-                }
-                else {
-                    $tipoVoto = "Voto obrigatório";
-                }
+            $valor = isset($_GET["valor"]) ? $_GET["valor"] : 0;
+
+            for($i = 0; $i <= 10; $i++) {
+                $resultado = $valor * $i;
+                echo "$valor x  $i = $resultado. <br>";
             }
-
-
-            echo "Você tem $idade anos. Sobre votar: $tipoVoto.";
-
         ?>  
         <br>
         <a class="btn-voltar" href="02_exercicio.html">Voltar</a>
