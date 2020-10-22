@@ -17,7 +17,7 @@
                 $contador--; 
             } while ($contador >= 1);
 
-            echo "O fatorial de <span>$valor</span> é igual a <span>$fatorial!</span>.";
+            echo "O fatorial de <span>$valor!</span> é igual a <span>$fatorial</span>.";
 
         ?>  
         <br>
