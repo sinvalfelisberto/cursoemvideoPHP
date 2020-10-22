@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 12 - Estruturas Condicionais</title>
+    <title>Aula 12 - Estruturas de Repetição</title>
     <link rel="stylesheet" href="_css/estilo.css">
 </head>
 <body>
@@ -16,12 +16,11 @@
             do {
                 echo "$contador, ";
                 $contador--;
-            } while ($contador < 1);
+            } while ($contador > 1);
 
             echo " $contador.";
         ?>  
         <br>
-        <a class="btn-voltar" href="01_exercicio.html">Voltar</a>
     </div>
 </body>
 </html>

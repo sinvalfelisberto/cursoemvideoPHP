@@ -3,33 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 10 - Estruturas Condicionais</title>
+    <title>Aula 12 - Estruturas de Repetição</title>
     <link rel="stylesheet" href="_css/estilo.css">
 </head>
 <body>
     <div>
         <?php
-            $diaSemana = isset($_GET["diaSemana"]) ? $_GET["diaSemana"] : 0;
+            $valor = isset($_GET["valor"]) ? $_GET["valor"] : 1;
+            $contador = $valor;
+            $fatorial = 1;
+            do {
+                $fatorial = $fatorial * $contador;
+                $contador--; 
+            } while ($contador >= 1);
 
-            switch ($diaSemana) {
-                case 2:
-                case 3:
-                case 4:
-                case 5:
-                case 6:
-                    echo "Hoje é dia de estudar e trabalhar!!!";
-                    break;
-                case 7:
-                case 1:
-                    echo "Hoje é dia de descansar!";
-                    break;
-                default:
-                    echo "Dia inválido!";
-            }
+            echo "O fatorial de <span>$valor</span> é igual a <span>$fatorial!</span>.";
 
         ?>  
         <br>
-        <a class="btn-voltar" href="02_exercicio.html">Voltar</a>
+        <a class="btn-voltar" href="01_exercicio.html">Voltar</a>
     </div>
 </body>
 </html>
