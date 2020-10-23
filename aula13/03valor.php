@@ -3,30 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 09 - Estruturas Condicionais</title>
+    <title>Aula 13 - Repetições</title>
     <link rel="stylesheet" href="_css/estilo.css">
 </head>
 <body>
     <div>
         <?php
-            $primeiraNota = (isset($_GET["primeiraNota"]) ? $_GET["primeiraNota"] : 0);
-            $segundaNota = (isset($_GET["segundaNota"]) ? $_GET["segundaNota"] : 0);
-            $situacaoAluno = "";
-            $media = ($primeiraNota + $segundaNota) / 2;    
-
+            $valor = (isset($_GET["valor"]) ? $_GET["valor"] : 0);
+            $qtdMultiplos = 0;
+            $vlrMultiplos = array();
+            echo "<h2>Analisando o número $valor</h2>";
             
-            if($media < 4){
-                $situacaoAluno = "Reprovado.";
-            } 
-            elseif($media < 7){
-                $situacaoAluno = "em recuperação.";
+            for($i = 1; $i <= $valor; $i++){
+                if($valor % $i == 0) {
+                    $qtdMultiplos++;
+                    array_push($vlrMultiplos, $i);
+                }
+
             }
-            else{
-                $situacaoAluno = "Aprovado";
+
+            print "Total de múltiplos: ". count($vlrMultiplos);
+            print "<br>";
+
+            print "Quantidade de múltiplos: ";
+            foreach ($vlrMultiplos as $value) {
+                print "$value ";
             }
-           
-            echo "A primeira nota foi <span>$primeiraNota</span> <br>A segunda nota foi <span>$segundaNota</span> <br>A média final é " . "<span>". number_format($media, 1, ',', '.') ."</span>";
-            echo "<br>A situação do aluno é <span>$situacaoAluno</span>";
+            for ($i = 0; $i <= count($vlrMultiplos); $i++) {
+                print "$vlrMultiplos[$i] "
+            }
+            print "<br>";
+
+            if($qtdMultiplos > 2){
+                echo "Resultado: $valor <span>NÃO É PRIMO</span>";
+            }
+            else {
+                echo "Resultado: $valor <span>É PRIMO</span>";
+            }
         ?>  
         <br>
         <a class="btn-voltar" href="03_exercicio.html">Voltar</a>
