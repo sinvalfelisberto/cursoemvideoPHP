@@ -26,11 +26,11 @@
             print "<br>";
 
             print "Quantidade de múltiplos: ";
-            foreach ($vlrMultiplos as $value) {
-                print "$value ";
-            }
-            for ($i = 0; $i <= count($vlrMultiplos); $i++) {
-                print "$vlrMultiplos[$i] "
+            #foreach ($vlrMultiplos as $value) {
+            #    print "$value ";
+            #}
+            for ($i = 0; $i < count($vlrMultiplos); $i++) {
+                print "$vlrMultiplos[$i] ";
             }
             print "<br>";
 
