@@ -8,8 +8,16 @@
 </head>
 <body>
     <main>
+
         <div>
-    
+            <?php
+                include "funcoes.php";
+                ola();
+                mostraValor(357);
+                mostraValor("sarapatel");
+                mostraValor(1.3);
+                ?>  
+            <br>
         </div>
     </main>
 </body>
