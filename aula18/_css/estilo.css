@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* Isso a globo não mostra */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #52c6fc;
+    
+ /* background-attachment: fixed; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.05rem;
+}
+main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background: url(_imagens/fundo.jpg) ;
+    background-size: 90%;
+    background-position: center;
+    background-repeat: space;
+}
+
+div {
+    padding: 20px;
+    position: relative;
+    width: 700px;
+    height: 500px;
+    background-color: #f8f8f8;
+    margin: 145px auto 200px auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 3px 3px 0.3px rgba(0,0,0,.3);
+    word-wrap: break-word;
+    line-height: 2rem;
+}
+
+.btn-voltar {
+    width: 20px;
+    background-color: rgb(253, 139, 0);
+    text-decoration: none;
+    padding: 7px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    color: #FFF;
+    opacity: 0.9;
+    text-shadow: 1px 1px 3px #000;
+}
+.btn-voltar:hover{
+    opacity: 1;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.btn {
+    background-color: rgb(253, 139, 0);
+    font-size: 1rem;
+    border-radius: 3px;
+    color: #FFF;
+    opacity: 0.9;
+    text-shadow: 1px 1px 3px #000;
+    
+}
+.btn:hover{
+    opacity: 1;
+    box-shadow: 1px 1px 3px #000;
+}
+
+span {
+    color: darkred;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Long live House Stark */
